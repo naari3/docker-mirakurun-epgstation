@@ -61,8 +61,13 @@ services:
             - "8888:8888"
             - "8889:8889"
 #         user: "1000:1000"
-#         devices:
-#             - /dev/dri:/dev/dri
+        devices:
+            # - /dev/dri:/dev/dri
+            - /dev/video10:/dev/video10
+            - /dev/video11:/dev/video11
+            - /dev/video12:/dev/video12
+            - /dev/video18:/dev/video18
+            - /dev/video31:/dev/video31
         restart: always
 
 volumes:
